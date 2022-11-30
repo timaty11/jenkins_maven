@@ -17,6 +17,7 @@ public class AppController {
 
     @GetMapping("/")
     public List<Project> getAllProjects() {
+        System.out.println("mem");
         return projectDAO.getAllProjects();
     }
 
