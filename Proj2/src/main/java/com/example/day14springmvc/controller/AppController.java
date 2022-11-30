@@ -17,6 +17,7 @@ public class AppController {
 
     @PostMapping("/login")
     public String loginValid(@ModelAttribute User user) {
+        System.out.println("memms");
 
         if (userService.loginValidate(user)) {
             return "success";
